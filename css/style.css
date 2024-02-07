@@ -197,6 +197,9 @@ li {
   height: 100%;
   object-fit: cover;
 }
+.about_image-mobil{
+  display: none;
+}
 
 /* Expertise */
 
@@ -386,6 +389,18 @@ li {
 
   .about {
     flex-direction: column-reverse;
+  }
+  #about{
+    flex-direction: column;
+  }
+  .about__image-img {
+    display: none;
+  }
+  .about_image-mobil{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
