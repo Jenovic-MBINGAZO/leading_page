@@ -272,15 +272,18 @@ li {
 }
 
 .testimonies__container {
-  padding: 3rem 6rem;
+  padding: 3rem 6rem;/*A revenir---------------*/
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  /*background-color: red;*/
 }
 
 .testimonie {
   text-align: center;
-  flex-basis: 20rem;
+  flex-basis: 30rem;
+  /*background-color: green;*/
+  /*width: 22%;*/
 }
 
 .testimonie__avatar {
@@ -293,6 +296,8 @@ li {
   font-family: var(--primary-font);
   color: var(--black-variant-color);
   margin: 1.7rem 0;
+  /*background-color: yellow;*/
+  /*color: red;*/
 }
 
 .testimonie__author {
@@ -315,16 +320,26 @@ li {
 .gallery {
   display: flex;
 }
-
+.gallry__display{
+  display: flex;
+}
 .gallery__item {
-  flex-basis: 25%;
+  flex-basis: 50%;
 }
 
 .gallery__picture {
   width: 100%;
   height: 100%;
 }
-
+.gallery__picture__phone{
+  display: none;
+}
+/*
+#contenaite{
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+}*/
 /* ---------- Footer --------------- */
 
 .footer {
@@ -418,8 +433,28 @@ li {
     padding-top: 25rem;
  
   }
-  
-  
+  .testimonies__title {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+  }
+  .gallery {
+    flex-direction: column;
+  }
+  .gallry__display{
+    display: flex;
+    flex-direction: row;
+  }
+  .gallery__picture{
+    display: none;
+  }
+  .gallery__picture__phone{
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+  .gallery__item {
+    flex-basis: 50%;
+  }
 }
 
 @media screen and (min-width: 1025px) {
